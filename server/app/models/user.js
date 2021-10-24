@@ -19,6 +19,7 @@ const UserSchema = new mongoose.Schema({
             name: String,
             avatar: String,
           },
+          type: String,
           text: String,
           date: Date,
         },

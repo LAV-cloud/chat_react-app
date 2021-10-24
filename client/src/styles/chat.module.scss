@@ -1,0 +1,105 @@
+.chat {
+  width: 1520px;
+  height: 100vh;
+  &__messages {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: rgb(230, 230, 230);
+    overflow-y: auto;
+    padding: 20px;
+    &::-webkit-scrollbar {
+      height: 10px;
+      width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(120, 120, 120);
+      border-radius: 20px;
+    }
+  }
+  &__modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__fileImg {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  &__fileSubmit {
+    margin-top: 20px;
+    background-color: rgb(25, 143, 253);
+    border-radius: 8px;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    font-size: 16px;
+  }
+  &__text {
+    width: 100%;
+    padding: 0px 20px;
+    height: 60px;
+    background-color: rgba(180, 180, 180, 0.8);
+    display: flex;
+    align-items: center;
+  }
+  &__form {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+    padding: 5px 10px;
+    & > hr {
+      height: 100%;
+      width: 2px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      border: none;
+      margin-right: 10px;
+    }
+  }
+  &__file {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    transition: color .3s ease;
+    &:hover {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  &__input {
+    width: calc(100% - 40px);
+    outline: none;
+    height: 30px;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    font-size: 16px;
+  }
+  &__btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(25, 143, 253);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color .3s ease;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

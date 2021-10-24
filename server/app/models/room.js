@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const RoomSchema = new mongoose.Schema({
   name: String,
   description: String,
+  avatar: String,
   users: [Number],
   messages: [
     {
@@ -11,6 +12,7 @@ const RoomSchema = new mongoose.Schema({
         name: String,
         avatar: String,
       },
+      type: String,
       text: String,
       date: Date,
     },
