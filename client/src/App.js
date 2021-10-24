@@ -8,6 +8,7 @@ export default function App() {
 
   useEffect(() => {
     socket = io(ENDPOINT);
+    socket.emit('join', '6174d836704d539dcb094e30');
 
     return () => {
       socket.disconnect();
